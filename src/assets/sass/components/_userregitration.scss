@@ -1,0 +1,112 @@
+
+.user-regitrations{
+    background-color: $color-white;
+    padding: 15px;
+    height: 400px;
+    overflow-y: scroll;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5px;
+        border-bottom: 1px solid $icons-color;
+        li{
+            display: inline-block;
+            position: relative;
+            &.progress-li{
+                display: contents;
+            }
+            .progress{
+                height: 5px;
+            }
+            // .progress::-webkit-progress-bar{ imp for low back color ( progress-bar)
+            //     background-color: red;
+            // }
+
+            // .progress::-webkit-progress-value { imp for second color in progress bar (progress-value)
+            //     background: blue;
+            //   }
+
+            .progressRed::-webkit-progress-value{
+                background-color: $color-red;
+            }
+
+            .progressLime::-webkit-progress-value{
+                background-color: $color-lime;
+            }
+
+            .progress1::-webkit-progress-value{
+                background-color: $progress-bar-1;
+            }
+
+            .progress2::-webkit-progress-value{
+                background-color: $progress-bar-2;
+            }
+
+            .progress3::-webkit-progress-value{
+                background-color: $progress-bar-3;
+            }
+            .progress4::-webkit-progress-value{
+                background-color: $progress-bar-4;
+            }
+            .progress5::-webkit-progress-value{
+                background-color: $progress-bar-5;
+            }
+            .progress6::-webkit-progress-value{
+                background-color: $progress-bar-6;
+            }
+
+
+            
+            .btn-more{
+                border: 0;
+                box-shadow: unset;
+                outline: 0;
+                padding: 5px;
+                background-color: $icons-color;
+                border-radius: 5px;
+                color: $color-white;
+                font-size: 12px;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-white;
+                }
+            }
+            .user-info{
+                line-height: 1;
+                p{
+                    margin: 0;
+                    font-size: 10px;
+                }
+                span{
+                    font-size: 10px;
+                    margin: 0;
+                    display: inline-block;
+                }
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                +sup{
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    &.active{
+                        background-color: $color-lime;
+                    }
+                }
+            }
+            .user-pro{
+                font-size: 12px;
+                display: inline-block;
+            }
+        }
+    }
+    
+}

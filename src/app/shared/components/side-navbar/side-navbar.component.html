@@ -1,0 +1,10 @@
+<aside>
+    <div class="side-navbar">
+        <span>Logo</span>
+        <ul>
+            <li [class.active]="i===0" *ngFor="let icons of Arraynavbar; let i = index">
+                <a href="javascript:;"><i [class]="icons"></i></a>
+            </li>
+        </ul>
+    </div>
+</aside>

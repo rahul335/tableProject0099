@@ -1,0 +1,25 @@
+.card{
+    margin-bottom: 20px;
+    .card-body{
+        padding: 20px;
+        .card-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            span{
+                display: inline-block;
+                font-size: 30px;
+            }
+        }
+    }
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        span{
+            color: $icons-color;
+        }
+        .card-text{
+            color: $icons-color;
+        }
+    }
+}

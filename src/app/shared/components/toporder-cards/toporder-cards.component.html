@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let card of top_order">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h1>{{card.value}}%</h1>
+            <span><i class="fas fa-music"></i></span>
+          </div>
+          <h6 class="card-subtitle">{{card.header}}</h6>
+          <p class="card-text">{{card.sub_header}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

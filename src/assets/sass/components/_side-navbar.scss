@@ -1,0 +1,30 @@
+aside{
+    .side-navbar{
+        width: 90px;
+        height: 100vh;
+        background-color: $color-white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        span{
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+            background-color: $color-primary;
+            color: $color-white;
+            cursor: pointer;
+        }
+        ul{
+            li{
+                a{
+                    width: 100%;
+                    padding: 20px;
+                    color: $icons-color;
+                }
+                &.active a, &:hover a, &:focus a{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

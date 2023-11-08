@@ -1,0 +1,28 @@
+.table-order-section{
+    background-color: $color-white;
+    height: 400px;
+    overflow-y: scroll;
+    th, td{
+        font-size: 12px;
+        i{
+            cursor: pointer;
+        }
+        &.t-status{
+            text-align: center;
+            .paid-info{
+                padding: 5px 8px;
+                border-radius: 5px;
+                color: #fff;
+            }
+            .paid-color{
+                background-color: $paid-color;
+            }
+            .pending-color{
+                background-color: $pending-color;
+            }
+            .failed-color{
+                background-color: $failed-color;
+            }
+        }
+    }
+}

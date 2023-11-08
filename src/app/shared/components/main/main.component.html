@@ -1,0 +1,24 @@
+<div class="main-section">
+    <app-top-navbar></app-top-navbar>
+    <app-toporder-cards [top_order]="top_order"></app-toporder-cards>
+    <div class="container-fluid">
+        <div class="row pb-4">
+            <div class="col-sm-8">
+                <app-table-order [table_order]="table_order"></app-table-order>
+            </div>
+            <div class="col-sm-4">
+                <app-user-regitration [user_R]="user_R"></app-user-regitration>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <app-line-graph></app-line-graph>
+            </div>
+            <div class="col-sm-5">
+                <app-column-graph></app-column-graph>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</div>

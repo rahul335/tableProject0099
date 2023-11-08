@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import './assets/sass/abstract/variabels';
+@import './assets/sass/abstract/themes';
+@import './assets/sass/abstract/mixins';
+
+
+@import './assets/sass/base/utilites';
+@import './assets/sass/base/typograpy';
+@import './assets/sass/base/themes';
+@import './assets/sass/base/grids';
+
+
+@import './assets/sass/components/side-navbar';
+@import './assets/sass/components/tableorder';
+@import './assets/sass/components/top-navbar';
+@import './assets/sass/components/topOrder-cards';
+@import './assets/sass/components/userregitration';
+@import './assets/sass/components/main';
+@import './assets/sass/components/line-graph';
+@import './assets/sass/components/column';
+@import './assets/sass/components/donut';
+
+
+
+
+
+

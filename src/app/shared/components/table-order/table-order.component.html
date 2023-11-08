@@ -1,0 +1,32 @@
+<div class="table-order-section">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Delivery Date</th>
+                <th class="t-status">Status</th>
+                <th>Tracking No</th>
+                <th>Shiping</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let table of table_order; let i = index">
+                <td>{{01 + i}}</td>
+                <td>{{table.name}}</td>
+                <td>{{table.product}}</td>
+                <td>{{table.delivery_date}}</td>
+                <td class="t-status"><span class="paid-info" [ngClass]="{
+                    'paid-color' : table.status === 'Paid',
+                    'pending-color' : table.status === 'Pending',
+                    'failed-color' : table.status === 'Failed'
+                }">{{table.status}}</span></td>
+                <td>{{table.tracking_no}}</td>
+                <td>{{table.shipping}}</td>
+                <td><i class="fas fa-times"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

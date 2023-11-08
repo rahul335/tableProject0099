@@ -1,0 +1,26 @@
+<div class="user-regitrations">
+    <ul *ngFor="let user of user_R">
+        <li>
+            <img src="{{user.picture}}" alt="img"><sup [class.active]="user.isActive"></sup>
+        </li>
+        <li>
+            <div class="user-info">
+                <p>{{user.name}}</p>
+                <span>{{user.country}}</span>
+            </div>
+        </li>
+        <li class="progress-li">
+            <progress value="80" max="100" class="progress" [ngClass]="{
+                progressRed:user.progress <=20,
+                progress2:user.progress > 20 && user.progress <= 30,
+                progress6:user.progress > 30 && user.progress <= 40,
+                progressLime:user.progress > 40 && user.progress <= 50,
+                progress1:user.progress > 50
+            }" [value]="user.progress"></progress> 
+            <span class="user-pro">{{user.progress}}%</span>
+        </li>
+        <li>
+            <button class="btn-more">More</button>
+        </li>
+    </ul>
+</div>
